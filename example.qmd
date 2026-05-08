@@ -88,3 +88,9 @@ Once resolved, the merge was completed using:
 `git commit -m "Resolved merge conflict between main and testbranch by integrating both changes"`
 
 Finally, the updated version of the project was pushed to GitHub, ensuring that the resolved merge was reflected in the remote repository.
+
+## Step 7: Tagging the Project Version
+
+An annotated tag `v1.0` was created to mark a stable version of the project after completing branching, merging, and data integration.
+
+Tags help identify important milestones in a Git repository.
