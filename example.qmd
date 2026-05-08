@@ -6,4 +6,4 @@ toc: true
 ---
 # Reproducible Workflow Guide
 
-This document demonstrates version control using Git, GitHub, and the command line interface.
+This document demonstrates the use of git branches for collaborative version control workflows. 
