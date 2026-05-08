@@ -1,0 +1,9 @@
+---
+title: "My Reproducible Workflow Example"
+author: "Shakshi Shah"
+format: html
+toc: true
+---
+# Reproducible Workflow Guide
+
+This document demonstrates version control using Git, GitHub, and the command line interface.
