@@ -48,7 +48,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#reproducible-workflow-guide" id="toc-reproducible-workflow-guide" class="nav-link active" data-scroll-target="#reproducible-workflow-guide">Reproducible Workflow Guide</a></li>
+  <li><a href="#reproducible-workflow-guide" id="toc-reproducible-workflow-guide" class="nav-link active" data-scroll-target="#reproducible-workflow-guide">Reproducible Workflow Guide</a>
+  <ul class="collapse">
+  <li><a href="#step-1-creating-the-quarto-document" id="toc-step-1-creating-the-quarto-document" class="nav-link" data-scroll-target="#step-1-creating-the-quarto-document">Step 1: Creating the Quarto Document</a></li>
+  <li><a href="#step-2-initialising-git-and-connecting-to-github" id="toc-step-2-initialising-git-and-connecting-to-github" class="nav-link" data-scroll-target="#step-2-initialising-git-and-connecting-to-github">Step 2: Initialising Git and Connecting to GitHub</a></li>
+  <li><a href="#step-3-creating-and-updating-a-branch" id="toc-step-3-creating-and-updating-a-branch" class="nav-link" data-scroll-target="#step-3-creating-and-updating-a-branch">Step 3: Creating and Updating a Branch</a></li>
+  <li><a href="#step-4-amending-the-previous-commit" id="toc-step-4-amending-the-previous-commit" class="nav-link" data-scroll-target="#step-4-amending-the-previous-commit">Step 4: Amending the Previous Commit</a></li>
+  <li><a href="#step-5-creating-a-conflict-on-main" id="toc-step-5-creating-a-conflict-on-main" class="nav-link" data-scroll-target="#step-5-creating-a-conflict-on-main">Step 5: Creating a Conflict on Main</a></li>
+  <li><a href="#step-6-merging-and-resolving-the-conflict" id="toc-step-6-merging-and-resolving-the-conflict" class="nav-link" data-scroll-target="#step-6-merging-and-resolving-the-conflict">Step 6: Merging and Resolving the Conflict</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -81,7 +89,59 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="reproducible-workflow-guide" class="level1">
 <h1>Reproducible Workflow Guide</h1>
-<p>This document demonstrates version control using Git, GitHub, and the command line interface.</p>
+<p>This document demonstrates github collaboration and version control using branches.</p>
+<section id="step-1-creating-the-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-creating-the-quarto-document">Step 1: Creating the Quarto Document</h2>
+<p>A new project was created in Positron for this assignment workflow. Within the project directory, a Quarto file named <code>example.qmd</code> was created.</p>
+<p>The document was then rendered into HTML format using the following terminal command:</p>
+<p><code>quarto render example.qmd --to html</code></p>
+<p>This step confirmed that the Quarto setup was correctly configured and that the document could be successfully converted into an HTML output.</p>
+</section>
+<section id="step-2-initialising-git-and-connecting-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-initialising-git-and-connecting-to-github">Step 2: Initialising Git and Connecting to GitHub</h2>
+<p>The project folder was initialised as a Git repository using:</p>
+<p><code>git init</code></p>
+<p>This enabled version control, allowing Git to track and manage changes made within the project.</p>
+<p>All project files were staged and committed to establish the initial version of the repository.</p>
+<p>A GitHub repository was then linked to the local repository using the following commands:</p>
+<p><code>git remote add origin &lt;repository-url&gt;</code> <code>git branch -M main</code> <code>git push -u origin main</code></p>
+<p>These commands connected the local project to GitHub and uploaded the initial commit to the remote repository.</p>
+</section>
+<section id="step-3-creating-and-updating-a-branch" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-creating-and-updating-a-branch">Step 3: Creating and Updating a Branch</h2>
+<p>A new branch called <code>testbranch</code> was created and switched to using:</p>
+<p><code>git checkout -b testbranch</code></p>
+<p>This allowed development to continue independently from the main branch without affecting the stable version of the project.</p>
+<p>The introduction section in <code>example.qmd</code> was modified within this branch to demonstrate version tracking.</p>
+<p>The changes were committed and pushed to GitHub using:</p>
+<p><code>git push -u origin testbranch</code></p>
+<p>This ensured the branch was also available in the remote repository for tracking and collaboration purposes.</p>
+</section>
+<section id="step-4-amending-the-previous-commit" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-amending-the-previous-commit">Step 4: Amending the Previous Commit</h2>
+<p>A new folder named <code>data</code> was created, and the dataset from Assignment 1 was added into it.</p>
+<p>Instead of creating a new commit, the previous commit was updated using:</p>
+<p><code>git commit --amend -m "Updated project structure and included Assignment 1 dataset in data folder"</code></p>
+<p>This approach maintained a cleaner commit history by combining related changes into a single commit.</p>
+<p>The amended commit was pushed to GitHub using a force push:</p>
+<p><code>git push --force</code></p>
+<p>This was necessary because amending a commit changes its history and therefore requires overwriting the remote version.</p>
+</section>
+<section id="step-5-creating-a-conflict-on-main" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-creating-a-conflict-on-main">Step 5: Creating a Conflict on Main</h2>
+<p>The <code>main</code> branch was checked out again, and the same section of <code>example.qmd</code> was modified differently from the version in <code>testbranch</code>.</p>
+<p>The changes were committed and pushed to GitHub.</p>
+<p>By editing the same section in two different ways across branches, a deliberate merge conflict scenario was created for demonstration purposes.</p>
+</section>
+<section id="step-6-merging-and-resolving-the-conflict" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-merging-and-resolving-the-conflict">Step 6: Merging and Resolving the Conflict</h2>
+<p>The <code>testbranch</code> was merged into the <code>main</code> branch using:</p>
+<p><code>git merge testbranch</code></p>
+<p>Git detected a conflict because the same section of text had been modified differently in both branches. The conflict was resolved manually by editing the file, removing the conflict markers, and retaining the correct final version of the content.</p>
+<p>Once resolved, the merge was completed using:</p>
+<p><code>git commit -m "Resolved merge conflict between main and testbranch by integrating both changes"</code></p>
+<p>Finally, the updated version of the project was pushed to GitHub, ensuring that the resolved merge was reflected in the remote repository.</p>
+</section>
 </section>
 
 </main>
