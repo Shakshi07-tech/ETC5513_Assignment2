@@ -100,3 +100,9 @@ Tags help identify important milestones in a Git repository.
 The `testbranch` was deleted locally and remotely after successful merging into the main branch.
 
 This keeps the repository clean and avoids unnecessary branches.
+
+## Step 9: Commit History
+
+A condensed commit history was displayed using `git log --oneline`.
+
+This provides a simplified view of all changes made throughout the project.
