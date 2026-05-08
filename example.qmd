@@ -94,3 +94,9 @@ Finally, the updated version of the project was pushed to GitHub, ensuring that 
 An annotated tag `v1.0` was created to mark a stable version of the project after completing branching, merging, and data integration.
 
 Tags help identify important milestones in a Git repository.
+
+## Step 8: Branch Cleanup
+
+The `testbranch` was deleted locally and remotely after successful merging into the main branch.
+
+This keeps the repository clean and avoids unnecessary branches.
