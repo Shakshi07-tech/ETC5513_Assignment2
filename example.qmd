@@ -1,9 +1,20 @@
 ---
 title: "My Reproducible Workflow Example"
 author: "Shakshi Shah"
-format: html
 toc: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-fold: true
+
+  pdf:
+    toc: true
+    number-sections: true
 ---
+
 # Reproducible Workflow Guide
 
 This document demonstrates github collaboration and version control using branches.
@@ -17,6 +28,8 @@ The document was then rendered into HTML format using the following terminal com
 `quarto render example.qmd --to html`
 
 This step confirmed that the Quarto setup was correctly configured and that the document could be successfully converted into an HTML output.
+
+![Check for render document screenshot](Screenshots/Check_depiction.png)
 
 ## Step 2: Initialising Git and Connecting to GitHub
 
@@ -53,6 +66,7 @@ The changes were committed and pushed to GitHub using:
 This ensured the branch was also available in the remote repository for tracking and collaboration purposes.
 
 ## Step 4: Amending the Previous Commit
+
 A new folder named `data` was created, and the dataset from Assignment 1 was added into it.
 
 Instead of creating a new commit, the previous commit was updated using:
@@ -68,11 +82,14 @@ The amended commit was pushed to GitHub using a force push:
 This was necessary because amending a commit changes its history and therefore requires overwriting the remote version.
 
 ## Step 5: Creating a Conflict on Main
+
 The `main` branch was checked out again, and the same section of `example.qmd` was modified differently from the version in `testbranch`.
 
 The changes were committed and pushed to GitHub.
 
 By editing the same section in two different ways across branches, a deliberate merge conflict scenario was created for demonstration purposes.
+
+![Conflict creation screenshot](Screenshots/Conflict.png)
 
 ## Step 6: Merging and Resolving the Conflict
 
@@ -101,8 +118,15 @@ The `testbranch` was deleted locally and remotely after successful merging into 
 
 This keeps the repository clean and avoids unnecessary branches.
 
+![Branch_cleanup screenshot](Screenshots/Branch_before.png)
+
+![Branch_cleanup after screenshot](Screenshots/Branch_after.png)
+
 ## Step 9: Commit History
 
 A condensed commit history was displayed using `git log --oneline`.
 
 This provides a simplified view of all changes made throughout the project.
+
+![Commit list screenshot](Screenshots/Conflict.png)
+

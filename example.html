@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="example_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="example_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="example_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="example_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="example_files/libs/bootstrap/bootstrap-4d7f0bce1131f3e5f9547cd857cfbfc8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -48,20 +48,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#reproducible-workflow-guide" id="toc-reproducible-workflow-guide" class="nav-link active" data-scroll-target="#reproducible-workflow-guide">Reproducible Workflow Guide</a>
+  <li><a href="#reproducible-workflow-guide" id="toc-reproducible-workflow-guide" class="nav-link active" data-scroll-target="#reproducible-workflow-guide"><span class="header-section-number">1</span> Reproducible Workflow Guide</a>
   <ul class="collapse">
-  <li><a href="#step-1-creating-the-quarto-document" id="toc-step-1-creating-the-quarto-document" class="nav-link" data-scroll-target="#step-1-creating-the-quarto-document">Step 1: Creating the Quarto Document</a></li>
-  <li><a href="#step-2-initialising-git-and-connecting-to-github" id="toc-step-2-initialising-git-and-connecting-to-github" class="nav-link" data-scroll-target="#step-2-initialising-git-and-connecting-to-github">Step 2: Initialising Git and Connecting to GitHub</a></li>
-  <li><a href="#step-3-creating-and-updating-a-branch" id="toc-step-3-creating-and-updating-a-branch" class="nav-link" data-scroll-target="#step-3-creating-and-updating-a-branch">Step 3: Creating and Updating a Branch</a></li>
-  <li><a href="#step-4-amending-the-previous-commit" id="toc-step-4-amending-the-previous-commit" class="nav-link" data-scroll-target="#step-4-amending-the-previous-commit">Step 4: Amending the Previous Commit</a></li>
-  <li><a href="#step-5-creating-a-conflict-on-main" id="toc-step-5-creating-a-conflict-on-main" class="nav-link" data-scroll-target="#step-5-creating-a-conflict-on-main">Step 5: Creating a Conflict on Main</a></li>
-  <li><a href="#step-6-merging-and-resolving-the-conflict" id="toc-step-6-merging-and-resolving-the-conflict" class="nav-link" data-scroll-target="#step-6-merging-and-resolving-the-conflict">Step 6: Merging and Resolving the Conflict</a></li>
-  <li><a href="#step-7-tagging-the-project-version" id="toc-step-7-tagging-the-project-version" class="nav-link" data-scroll-target="#step-7-tagging-the-project-version">Step 7: Tagging the Project Version</a></li>
-  <li><a href="#step-8-branch-cleanup" id="toc-step-8-branch-cleanup" class="nav-link" data-scroll-target="#step-8-branch-cleanup">Step 8: Branch Cleanup</a></li>
-  <li><a href="#step-9-commit-history" id="toc-step-9-commit-history" class="nav-link" data-scroll-target="#step-9-commit-history">Step 9: Commit History</a></li>
+  <li><a href="#step-1-creating-the-quarto-document" id="toc-step-1-creating-the-quarto-document" class="nav-link" data-scroll-target="#step-1-creating-the-quarto-document"><span class="header-section-number">1.1</span> Step 1: Creating the Quarto Document</a></li>
+  <li><a href="#step-2-initialising-git-and-connecting-to-github" id="toc-step-2-initialising-git-and-connecting-to-github" class="nav-link" data-scroll-target="#step-2-initialising-git-and-connecting-to-github"><span class="header-section-number">1.2</span> Step 2: Initialising Git and Connecting to GitHub</a></li>
+  <li><a href="#step-3-creating-and-updating-a-branch" id="toc-step-3-creating-and-updating-a-branch" class="nav-link" data-scroll-target="#step-3-creating-and-updating-a-branch"><span class="header-section-number">1.3</span> Step 3: Creating and Updating a Branch</a></li>
+  <li><a href="#step-4-amending-the-previous-commit" id="toc-step-4-amending-the-previous-commit" class="nav-link" data-scroll-target="#step-4-amending-the-previous-commit"><span class="header-section-number">1.4</span> Step 4: Amending the Previous Commit</a></li>
+  <li><a href="#step-5-creating-a-conflict-on-main" id="toc-step-5-creating-a-conflict-on-main" class="nav-link" data-scroll-target="#step-5-creating-a-conflict-on-main"><span class="header-section-number">1.5</span> Step 5: Creating a Conflict on Main</a></li>
+  <li><a href="#step-6-merging-and-resolving-the-conflict" id="toc-step-6-merging-and-resolving-the-conflict" class="nav-link" data-scroll-target="#step-6-merging-and-resolving-the-conflict"><span class="header-section-number">1.6</span> Step 6: Merging and Resolving the Conflict</a></li>
+  <li><a href="#step-7-tagging-the-project-version" id="toc-step-7-tagging-the-project-version" class="nav-link" data-scroll-target="#step-7-tagging-the-project-version"><span class="header-section-number">1.7</span> Step 7: Tagging the Project Version</a></li>
+  <li><a href="#step-8-branch-cleanup" id="toc-step-8-branch-cleanup" class="nav-link" data-scroll-target="#step-8-branch-cleanup"><span class="header-section-number">1.8</span> Step 8: Branch Cleanup</a></li>
+  <li><a href="#step-9-commit-history" id="toc-step-9-commit-history" class="nav-link" data-scroll-target="#step-9-commit-history"><span class="header-section-number">1.9</span> Step 9: Commit History</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="example.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -90,18 +90,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="reproducible-workflow-guide" class="level1">
-<h1>Reproducible Workflow Guide</h1>
+<section id="reproducible-workflow-guide" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Reproducible Workflow Guide</h1>
 <p>This document demonstrates github collaboration and version control using branches.</p>
-<section id="step-1-creating-the-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-creating-the-quarto-document">Step 1: Creating the Quarto Document</h2>
+<section id="step-1-creating-the-quarto-document" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="step-1-creating-the-quarto-document"><span class="header-section-number">1.1</span> Step 1: Creating the Quarto Document</h2>
 <p>A new project was created in Positron for this assignment workflow. Within the project directory, a Quarto file named <code>example.qmd</code> was created.</p>
 <p>The document was then rendered into HTML format using the following terminal command:</p>
 <p><code>quarto render example.qmd --to html</code></p>
 <p>This step confirmed that the Quarto setup was correctly configured and that the document could be successfully converted into an HTML output.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshots/Check_depiction.png" class="img-fluid figure-img"></p>
+<figcaption>Check for render document screenshot</figcaption>
+</figure>
+</div>
 </section>
-<section id="step-2-initialising-git-and-connecting-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-initialising-git-and-connecting-to-github">Step 2: Initialising Git and Connecting to GitHub</h2>
+<section id="step-2-initialising-git-and-connecting-to-github" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="step-2-initialising-git-and-connecting-to-github"><span class="header-section-number">1.2</span> Step 2: Initialising Git and Connecting to GitHub</h2>
 <p>The project folder was initialised as a Git repository using:</p>
 <p><code>git init</code></p>
 <p>This enabled version control, allowing Git to track and manage changes made within the project.</p>
@@ -110,8 +116,8 @@ ul.task-list li input[type="checkbox"] {
 <p><code>git remote add origin &lt;repository-url&gt;</code> <code>git branch -M main</code> <code>git push -u origin main</code></p>
 <p>These commands connected the local project to GitHub and uploaded the initial commit to the remote repository.</p>
 </section>
-<section id="step-3-creating-and-updating-a-branch" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-creating-and-updating-a-branch">Step 3: Creating and Updating a Branch</h2>
+<section id="step-3-creating-and-updating-a-branch" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="step-3-creating-and-updating-a-branch"><span class="header-section-number">1.3</span> Step 3: Creating and Updating a Branch</h2>
 <p>A new branch called <code>testbranch</code> was created and switched to using:</p>
 <p><code>git checkout -b testbranch</code></p>
 <p>This allowed development to continue independently from the main branch without affecting the stable version of the project.</p>
@@ -120,8 +126,8 @@ ul.task-list li input[type="checkbox"] {
 <p><code>git push -u origin testbranch</code></p>
 <p>This ensured the branch was also available in the remote repository for tracking and collaboration purposes.</p>
 </section>
-<section id="step-4-amending-the-previous-commit" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-amending-the-previous-commit">Step 4: Amending the Previous Commit</h2>
+<section id="step-4-amending-the-previous-commit" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="step-4-amending-the-previous-commit"><span class="header-section-number">1.4</span> Step 4: Amending the Previous Commit</h2>
 <p>A new folder named <code>data</code> was created, and the dataset from Assignment 1 was added into it.</p>
 <p>Instead of creating a new commit, the previous commit was updated using:</p>
 <p><code>git commit --amend -m "Updated project structure and included Assignment 1 dataset in data folder"</code></p>
@@ -130,14 +136,20 @@ ul.task-list li input[type="checkbox"] {
 <p><code>git push --force</code></p>
 <p>This was necessary because amending a commit changes its history and therefore requires overwriting the remote version.</p>
 </section>
-<section id="step-5-creating-a-conflict-on-main" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-creating-a-conflict-on-main">Step 5: Creating a Conflict on Main</h2>
+<section id="step-5-creating-a-conflict-on-main" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="step-5-creating-a-conflict-on-main"><span class="header-section-number">1.5</span> Step 5: Creating a Conflict on Main</h2>
 <p>The <code>main</code> branch was checked out again, and the same section of <code>example.qmd</code> was modified differently from the version in <code>testbranch</code>.</p>
 <p>The changes were committed and pushed to GitHub.</p>
 <p>By editing the same section in two different ways across branches, a deliberate merge conflict scenario was created for demonstration purposes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshots/Conflict.png" class="img-fluid figure-img"></p>
+<figcaption>Conflict creation screenshot</figcaption>
+</figure>
+</div>
 </section>
-<section id="step-6-merging-and-resolving-the-conflict" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-merging-and-resolving-the-conflict">Step 6: Merging and Resolving the Conflict</h2>
+<section id="step-6-merging-and-resolving-the-conflict" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="step-6-merging-and-resolving-the-conflict"><span class="header-section-number">1.6</span> Step 6: Merging and Resolving the Conflict</h2>
 <p>The <code>testbranch</code> was merged into the <code>main</code> branch using:</p>
 <p><code>git merge testbranch</code></p>
 <p>Git detected a conflict because the same section of text had been modified differently in both branches. The conflict was resolved manually by editing the file, removing the conflict markers, and retaining the correct final version of the content.</p>
@@ -145,20 +157,38 @@ ul.task-list li input[type="checkbox"] {
 <p><code>git commit -m "Resolved merge conflict between main and testbranch by integrating both changes"</code></p>
 <p>Finally, the updated version of the project was pushed to GitHub, ensuring that the resolved merge was reflected in the remote repository.</p>
 </section>
-<section id="step-7-tagging-the-project-version" class="level2">
-<h2 class="anchored" data-anchor-id="step-7-tagging-the-project-version">Step 7: Tagging the Project Version</h2>
+<section id="step-7-tagging-the-project-version" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="step-7-tagging-the-project-version"><span class="header-section-number">1.7</span> Step 7: Tagging the Project Version</h2>
 <p>An annotated tag <code>v1.0</code> was created to mark a stable version of the project after completing branching, merging, and data integration.</p>
 <p>Tags help identify important milestones in a Git repository.</p>
 </section>
-<section id="step-8-branch-cleanup" class="level2">
-<h2 class="anchored" data-anchor-id="step-8-branch-cleanup">Step 8: Branch Cleanup</h2>
+<section id="step-8-branch-cleanup" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="step-8-branch-cleanup"><span class="header-section-number">1.8</span> Step 8: Branch Cleanup</h2>
 <p>The <code>testbranch</code> was deleted locally and remotely after successful merging into the main branch.</p>
 <p>This keeps the repository clean and avoids unnecessary branches.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshots/Branch_before.png" class="img-fluid figure-img"></p>
+<figcaption>Branch_cleanup screenshot</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshots/Branch_after.png" class="img-fluid figure-img"></p>
+<figcaption>Branch_cleanup after screenshot</figcaption>
+</figure>
+</div>
 </section>
-<section id="step-9-commit-history" class="level2">
-<h2 class="anchored" data-anchor-id="step-9-commit-history">Step 9: Commit History</h2>
+<section id="step-9-commit-history" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="step-9-commit-history"><span class="header-section-number">1.9</span> Step 9: Commit History</h2>
 <p>A condensed commit history was displayed using <code>git log --oneline</code>.</p>
 <p>This provides a simplified view of all changes made throughout the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Screenshots/Conflict.png" class="img-fluid figure-img"></p>
+<figcaption>Commit list screenshot</figcaption>
+</figure>
+</div>
 </section>
 </section>
 
